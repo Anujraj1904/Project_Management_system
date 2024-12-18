@@ -1,0 +1,47 @@
+</div>
+<%- include('../partials/header') %>
+</div>
+  <div class="wrapper">
+    <div class="heading">
+      <h1>Add Project </h1>
+    </div>
+
+    <div class="form">
+      <form action="/projects" method="POST">
+        <input id="input" type="text" name="title" placeholder="Project Title">
+        <br>
+        <input id="input" type="text" name="description" placeholder="Project Description">
+        <br>
+        <input id="input" type="text" name="assignedTo" placeholder="Assigned To">
+        <br>
+        <input id="input" type="text" name="status" placeholder="Status">
+        <br>
+        <div class="button">
+          <button id="button" type="submit">Add Project</button>
+        </div>
+      </form>
+    </div>
+    <!-- PROJECT ASSIGNED CARD -->
+    <h1>Pending Task </h1>
+    <div class="card-container">
+      <% projects.forEach(project=> { %>
+        <div class="card custom-card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= project.title %>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Assigned to: <%= project.assignedTo %>
+            </h6>
+            <p class="card-text">
+              <%= project.description %>
+            </p>
+            <p>Status: <%= project.status %>
+            </p>
+            <a href="#" class="card-link">Mark As Done</a>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+    <%- include('../partials/footer') %>
+  </div>
+  </div>

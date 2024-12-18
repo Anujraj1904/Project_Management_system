@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+/* public/css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #c0392b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e44ad, #c0392b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+/* Wrapper to contain everything */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Full viewport height */
+}
+
+main {
+  flex: 1;
+  /* Take up remaining space */
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+/* Custom CSS for card container and cards */
+.card-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  gap: 20px !important;
+  /* Adjust spacing between cards */
+  padding: 20px !important;
+  /* Optional: Add padding around the container */
+  /* margin-left: 20px !important; */
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  border-radius: 10px;
+  margin: 3px;
+  padding: 5px;
+  width: 300px;
+}
+
+#button {
+  border-radius: 10px;
+  margin: 3px;
+  padding: 5px;
+  width: 150px;
+  color: white;
+  background-color: rgb(49, 48, 48);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  color: #333;
+
+}
+
+form {
+  margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+  /* background-color: #f1f1f1; */
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
